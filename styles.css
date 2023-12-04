@@ -71,7 +71,6 @@ body {
     max-width: 1200px; 
     margin: 0 auto; 
     padding: 20px;
-    
 }
   
 /* Styles for the About Me section */
@@ -190,7 +189,6 @@ footer {
 .mobile-download {
     display: none;
 }
-
 
 
 /* Responsive adjustments */
