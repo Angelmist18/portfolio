@@ -1,2 +1,2 @@
 # boilerplate
-Basic HTML and CSS setup for simple web design
+Final Project for MI349 / Work portfolio for Sean.
