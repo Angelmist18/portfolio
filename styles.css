@@ -120,6 +120,12 @@ body {
     margin-bottom: 20px; 
 }
 
+/* Styles for button group */
+.button-group {
+    text-align: center;
+    padding: 20px;
+}
+
 /* Button styles */
 .btn {
     background-color: var(--header-color); 
@@ -132,15 +138,24 @@ body {
     display: inline-block; 
     transition: background-color 0.3s, color 0.3s; 
     border: none; 
-    cursor: pointer; 
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 20px;
 }
-  
+
+
 /* Button hover styles */
 .btn:hover {
     background-color: #103b79; 
     color: #fff; 
 }
-  
+
+/* Add styles for the resume display section */
+.resume-display {
+    text-align: center;
+    padding: 20px;
+}
+
 /* Footer styles */
 footer {
     position: fixed; /* Links stay on screen */
@@ -176,6 +191,15 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .masthead h1 {
+        font-size: 2rem; /* Reduce font size on smaller screens */
+    }
+
+    .profile-image {
+        width: 150px; /* Smaller size for the profile image */
+        height: 150px;
+    }
+
     .about-skills-container {
       flex-direction: column; /* Stack sections vertically on smaller screens */
       align-items: center; /* Center align the stacked sections */
@@ -185,5 +209,30 @@ footer {
       min-width: 100%; /* Sections take full width on smaller screens */
       max-width: 100%; /* Adjusts the maximum width for smaller screens */
       margin-bottom: 20px; /* Space between the sections when stacked */
+    }
+
+    .personal-statement, #about-me, .skills {
+        text-align: justify; /* for better readability */
+    }
+
+    .resume-display object {
+        width: 100%;
+        height: auto; /* Adjust height for mobile devices */
+    }
+
+    .button-group .btn {
+        display: block; /* Stack buttons vertically */
+        width: 100%; /* Full width for buttons */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add space between stacked buttons */
+    }
+
+    body {
+        padding-bottom: 100px; /* Additional padding to account for fixed footer */
+    }
+
+    body {
+        padding: 20px; /* Reduce padding */
+        margin: 20px; /* Adjust margin if necessary */
     }
 }
