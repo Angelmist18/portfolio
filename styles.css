@@ -1,0 +1,189 @@
+/* Import Playfair Display font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Apply root styles for color variables */
+:root {
+    --header-color: #191D88; 
+    --body-color: #1450A3; 
+  }
+
+/* Header styles */
+.masthead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--header-color); 
+    color: #fff; 
+    border-radius: 15px; 
+    margin: 0 auto 40px; /* Centers the header if there's a max-width */
+    max-width: 1200px; /* Optional: max-width for larger screens */
+    width: 100%; /* Ensures the header extends full width on smaller screens */
+}
+  
+/* Header content styles */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px; 
+}
+
+/* Header text styles */
+.masthead h1 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 3rem; 
+    font-weight: bold; 
+    margin: 0;
+    padding: 0.5em 1em;
+}
+
+/* Profile image styles */
+.profile-image {
+    border-radius: 50%;
+    border: 5px solid #fff; 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+    flex-shrink: 0; 
+    display: block;
+}
+
+
+body {
+    font-family: 'Playfair Display', serif; 
+    margin: 40px;
+    padding: 40px;
+    color: #fff; 
+    background-color: var(--body-color); 
+    border-top: 10px solid var(--header-color); 
+    position: relative;
+    padding-bottom: 80px;
+}
+
+/* Container for About Me and Skills sections */
+.about-skills-container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+    
+}
+  
+/* Styles for the About Me section */
+#about-me {
+    flex: 1; 
+    min-width: 300px; 
+    max-width: 600px; 
+    line-height: 1.75em;
+}
+  
+/* Styles for the Skills section */
+.skills {
+    flex: 1; 
+    min-width: 300px; 
+    max-width: 600px; 
+    background: #191D88;
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 60px;
+}
+  
+.key-skills {
+    padding-left: 25px;
+}
+
+.key-skills li {
+    margin-bottom: 10px;
+}
+  
+/* Personal statement styles */
+.personal-statement {
+    max-width: 650px; 
+    margin: 0 auto; 
+    line-height: 1.75em; 
+    padding: 20px;
+}
+
+/* Container for the resume button */
+.resume-button {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100px;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+/* Button styles */
+.btn {
+    background-color: var(--header-color); 
+    color: #fff; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    display: inline-block; 
+    transition: background-color 0.3s, color 0.3s; 
+    border: none; 
+    cursor: pointer; 
+}
+  
+/* Button hover styles */
+.btn:hover {
+    background-color: #103b79; 
+    color: #fff; 
+}
+  
+/* Footer styles */
+footer {
+    position: fixed; /* Links stay on screen */
+    right: 20px;
+    bottom: 20px;
+    padding: 20px;
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Social media links styles */
+.social-media-links a {
+    display: inline-flex;
+    align-items: center; 
+}
+  
+.social-media-links img {
+    width: 50px; 
+    height: auto; 
+    transition: opacity 0.3s; 
+}
+  
+.social-media-links img:hover {
+    opacity: 0.7; /* Slight transparency on hover */
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-skills-container {
+      flex-direction: column; /* Stack sections vertically on smaller screens */
+      align-items: center; /* Center align the stacked sections */
+    }
+  
+    #about-me, .skills {
+      min-width: 100%; /* Sections take full width on smaller screens */
+      max-width: 100%; /* Adjusts the maximum width for smaller screens */
+      margin-bottom: 20px; /* Space between the sections when stacked */
+    }
+}
