@@ -194,7 +194,7 @@ footer {
 
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .masthead h1 {
         font-size: 2rem; /* Reduce font size on smaller screens */
     }
@@ -231,8 +231,10 @@ footer {
         margin-bottom: 20px; /* Add space between stacked buttons */
     }
 
-    body {
-        padding-bottom: 100px; /* Additional padding to account for fixed footer */
+    .footer {
+        position: relative; /* Adjust the footer position */
+        width: 100%;
+        padding: 20px;
     }
 
     body {
