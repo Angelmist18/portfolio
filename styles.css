@@ -155,6 +155,11 @@ body {
     padding: 20px;
 }
 
+.resume-display object {
+    width: 100%;
+    height: 700px; /* Adjust height as needed */
+}
+
 /* Footer styles */
 footer {
     position: fixed; /* Links stay on screen */
